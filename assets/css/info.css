@@ -206,3 +206,62 @@ body{
 .copyright h4{
     margin-left: 4rem;
 }
+button::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background: #383F51;
+    transition: all 0.4s ease-in-out;
+}
+
+button:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 12px 25px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+    color: #fff786;
+    animation: scalelp 0.3s ease-in-out;
+}
+
+button:not(:hover) span {
+    animation: scaledown 0.3s ease-in-out;
+}
+
+@keyframes scalelp {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaledown {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
