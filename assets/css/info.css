@@ -207,15 +207,10 @@ body{
     margin-left: 4rem;
 }
 
-
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
+a{
+    text-decoration: none;
+ 
 }
-
 button {
     position: relative;
     display: flex;
@@ -227,6 +222,10 @@ button {
     box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+
 }
   
 button:after {
@@ -237,11 +236,13 @@ button:after {
     height: 100%;
     background: #383f51;
     transition: all 0.4s ease-in-out;
+    text-decoration: none;
 }
   
 button:hover::after {
     left: 0;
     width: 100%;
+    text-decoration: none;
 }
   
 button span {
@@ -255,15 +256,18 @@ button span {
     letter-spacing: 1px;
     z-index: 1;
     transition: all 0.3s ease-in-out;
+    text-decoration: none;
 }
   
 button:hover span {
     color: #ffd700;
     animation: scaleUp 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 button:not(:hover) span {
     animation: scaleDown 0.3s ease-in-out;
+    text-decoration: none;
 }
   
 @keyframes scaleUp {
